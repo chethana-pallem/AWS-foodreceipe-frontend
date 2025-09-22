@@ -20,7 +20,7 @@ export default function Recipes() {
 
   const fetchRecipes = () => {
     axios
-      .get("http://localhost:8082/recipe")
+      .get("http://52.91.185.69:8082/recipe")
       .then((res) => {
         setRecipes(res.data);
         setFilteredRecipes(res.data);
