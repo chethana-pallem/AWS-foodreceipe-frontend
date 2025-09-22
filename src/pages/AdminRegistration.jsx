@@ -40,7 +40,7 @@ const AdminRegistration = () => {
 
     // console.log('Registration data:', formData);
 
-    axios.post('http://localhost:8082/adminregister', formData).then((response) => {
+    axios.post('http://52.91.185.69:8082/adminregister', formData).then((response) => {
       alert(response.data);
       navigate('/adminlogin');
     })
